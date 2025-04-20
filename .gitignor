@@ -1,5 +1,5 @@
 # CMake build directories
-/build/
+build/
 # CMake-generated files
 CMakeCache.txt
 CMakeFiles/
@@ -12,8 +12,8 @@ Thumbs.db
 ehthumbs.db
 
 # IDEs
-/.idea/
-/.vscode/
+.idea/
+.vscode/
 *.vs/
 *.vscode/
 

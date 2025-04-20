@@ -5,6 +5,7 @@
 ---
 
 ## 安装
+
 1. 将 `HttpClient.dll` 文件放入 Reframework 的 `plugins` 目录
 
 ---
@@ -12,12 +13,14 @@
 ## 基本用法
 
 ### 初始化客户端
+
 ```lua
 local client = HttpClient.new()
 client:add_header("User-Agent", "MyLuaClient/1.0")
 ```
 
 ### 发起 GET 请求
+
 ```lua
 client:get("https://api.example.com/data")
     :then_(function(response)
@@ -27,6 +30,7 @@ client:get("https://api.example.com/data")
 ```
 
 ### 发起 POST 请求
+
 ```lua
 client:post("https://api.example.com/submit", "{'key':'value'}")
     :then_(function(response)
@@ -39,6 +43,7 @@ client:post("https://api.example.com/submit", "{'key':'value'}")
 ## API 文档
 
 ### HttpClient
+
 | 方法 | 参数 | 描述 |
 |------|------|------|
 | `new()` | - | 创建新客户端实例 |
@@ -48,11 +53,15 @@ client:post("https://api.example.com/submit", "{'key':'value'}")
 | `remove_header(key)` | `key`: 要删除的头名称 | 移除请求头 |
 
 ### HttpFuture
+
 | 方法 | 参数 | 描述 |
 |------|------|------|
-| `then_(callback)` | `callback(response)` | 回调 |
+| `then_(callback)` | `callback(response)` | 设置响应回调函数 |
 
-### 响应对象
+---
+
+## 响应对象格式
+
 ```lua
 {
     url = "原始请求URL",
