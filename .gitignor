@@ -1,0 +1,57 @@
+# CMake build directories
+/build/
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+CMakeLists.txt.project
+CMakeLists.txt.cmake
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+
+# IDEs
+/.idea/
+/.vscode/
+*.vs/
+*.vscode/
+
+# Visual Studio
+.vs/
+/.vs2019/
+/.vs2017/
+*.vcxproj*
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# MacOS specific
+.DS_Store
+
+# Linux specific
+*~
+
+# Generated files from build system
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.log
+*.out
+
+# CMake test files
+CTestTestfile.cmake
+Testing/
+
+# Build artifacts
+*.tmp
+*.swp
